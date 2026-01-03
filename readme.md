@@ -79,7 +79,7 @@ contact-manager/
 
 ```bash
 # Clone the repo
-git clone <your-repo-url>
+git clone <https://github.com/owsam22/contact-management-system>
 cd contact-manager
 
 # Backend setup
@@ -217,5 +217,6 @@ This project is [MIT](LICENSE) licensed.
 <div align="center">
   <sub>made by sam with ☕</sub>
 </div>
+
 
 
