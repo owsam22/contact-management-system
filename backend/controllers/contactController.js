@@ -1,11 +1,16 @@
 import Contact from "../models/Contact.js";
 
 /**
- * Email format validation
+ * VALIDATORS
  */
-const isValidEmail = (email) => {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email).toLowerCase());
-};
+const isValidEmail = (email) =>
+  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email).toLowerCase());
+
+const isValidName = (name) =>
+  /^[A-Za-z\s]+$/.test(String(name).trim());
+
+const isValidPhone = (phone) =>
+  /^\d{10}$/.test(String(phone).trim());
 
 /**
  * CREATE CONTACT
@@ -27,6 +32,16 @@ export const createContact = async (req, res) => {
       });
     }
 
+    // 🔴 Name validation (letters and spaces only)
+    if (!isValidName(name)) {
+      return res.status(400).json({
+        message: "Validation error",
+        errors: {
+          name: "Name must contain only letters and spaces",
+        },
+      });
+    }
+
     // 🔴 Email format validation
     if (!isValidEmail(email)) {
       return res.status(400).json({
@@ -37,7 +52,17 @@ export const createContact = async (req, res) => {
       });
     }
 
-    // 🔴 Create contact (DB-level uniqueness handled by schema)
+    // 🔴 Phone validation (exactly 10 digits)
+    if (!isValidPhone(phone)) {
+      return res.status(400).json({
+        message: "Validation error",
+        errors: {
+          phone: "Phone number must be exactly 10 digits",
+        },
+      });
+    }
+
+    // 🔴 Create contact (unique phone enforced by DB)
     const contact = await Contact.create({
       name: String(name).trim(),
       email: String(email).trim(),
@@ -49,7 +74,7 @@ export const createContact = async (req, res) => {
   } catch (err) {
     console.error("createContact error:", err);
 
-    // 🔴 Duplicate phone number error
+    // 🔴 Duplicate phone number (MongoDB)
     if (err.code === 11000 && err.keyPattern?.phone) {
       return res.status(400).json({
         message: "Validation error",
