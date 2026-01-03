@@ -120,7 +120,7 @@ export default function ContactForm({ onCreated }) {
             className={`w-full rounded-lg border px-3 py-2 outline-none focus:ring-2 focus:ring-blue-200 ${
               showErr("name") ? "border-red-400" : "border-gray-300"
             }`}
-            placeholder="John Doe"
+            placeholder="Enter your name"
           />
           {showErr("name") ? (
             <p className="text-sm text-red-600 mt-1">{errors.name}</p>
@@ -137,7 +137,7 @@ export default function ContactForm({ onCreated }) {
             className={`w-full rounded-lg border px-3 py-2 outline-none focus:ring-2 focus:ring-blue-200 ${
               showErr("email") ? "border-red-400" : "border-gray-300"
             }`}
-            placeholder="john@example.com"
+            placeholder="me@example.com"
           />
           {showErr("email") ? (
             <p className="text-sm text-red-600 mt-1">{errors.email}</p>
@@ -154,7 +154,7 @@ export default function ContactForm({ onCreated }) {
             className={`w-full rounded-lg border px-3 py-2 outline-none focus:ring-2 focus:ring-blue-200 ${
               showErr("phone") ? "border-red-400" : "border-gray-300"
             }`}
-            placeholder="e.g. 9876543210"
+            placeholder="e.g. 9876543210 "
           />
           {showErr("phone") ? (
             <p className="text-sm text-red-600 mt-1">{errors.phone}</p>
