@@ -106,8 +106,18 @@ export default function App() {
       </main>
 
       <footer className="text-center text-sm text-gray-400 py-6 border-t mt-8">
-        Built with React + Express + MongoDB
+        Built with React + Express + MongoDB ·{" "}
+        <a
+          href="https://github.com/owsam22"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 underline"
+        >
+          @owsam22
+        </a>
       </footer>
+
+
     </div>
   );
 }
