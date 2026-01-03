@@ -1,4 +1,4 @@
-```markdown
+
 # 📇 Contact Manager - MERN Stack Web App
 
 [![React](https://img.shields.io/badge/React-18.3-blue?style=for-the-badge&logo=react)](https://reactjs.org)
@@ -215,22 +215,6 @@ This project is [MIT](LICENSE) licensed.
 ---
 
 <div align="center">
-  <sub>Powered by ❤️ and ☕</sub>
+  <sub>made by sam with ☕</sub>
 </div>
-```
 
-## 🎉 **How to Use This README**
-
-1. **Copy the markdown above** into `README.md` at project root.
-2. **Update placeholders**:
-   - Badges/links with your info
-   - Screenshots (take from `localhost:5173`)
-   - Demo/deploy links
-   - Author details
-3. **Add GIF**: Record a demo video → [Imgur](https://imgur.com) → Embed.
-4. **Commit & Push**:
-   ```bash
-   git add README.md
-   git commit -m "Add professional README"
-   git push origin main
-   ```
