@@ -17,7 +17,7 @@ A **modern, responsive Contact Management Web Application** built with the **MER
 
 | Desktop View | Mobile View |
 |--------------|-------------|
-| ![Desktop](images/desktopview) | ![Mobile](images/phoneview.png)
+| ![Desktop](images/desktopview.png) | ![Mobile](images/phoneview.jpeg)
 
 **Replace placeholders with actual screenshots** (e.g., from `npm run build` or tools like Vercel).
 
@@ -217,6 +217,7 @@ This project is [MIT](LICENSE) licensed.
 <div align="center">
   <sub>made by sam with ☕</sub>
 </div>
+
 
 
 
