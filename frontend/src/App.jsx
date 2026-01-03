@@ -105,17 +105,23 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="text-center text-sm text-gray-400 py-6 border-t mt-8">
-        Built with React + Express + MongoDB ·{" "}
-        <a
-          href="https://github.com/owsam22"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 hover:text-blue-300 underline"
-        >
-          @owsam22
-        </a>
-      </footer>
+<footer className="flex flex-col items-center gap-2 text-sm text-gray-400 py-6 border-t mt-8">
+  <p>Built with React + Express + MongoDB</p>
+
+  <a
+    href="https://github.com/owsam22"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 hover:text-gray-300"
+  >
+    <img
+      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+      alt="GitHub"
+      className="w-5 h-5"
+    />
+    <span>@owsam22</span>
+  </a>
+</footer>
 
 
     </div>
