@@ -11,7 +11,7 @@ A **modern, responsive Contact Management Web Application** built with the **MER
 
 ## ✨ **Demo**
 
-> **Live Preview**: [Deployed on Vercel/Netlify](https://your-deployment-link) *(Update with your deploy link)*
+> **Live Preview**: [click here](https://contact-management-n3rt.onrender.com/) 
 
 ### Screenshots
 
@@ -208,7 +208,7 @@ This project is [MIT](LICENSE) licensed.
 ## 👨‍💻 **Author**
 
 **Your Name**  
-[LinkedIn](https://linkedin.com/in/yourprofile) | [Portfolio](https://yourwebsite.com) | [GitHub](https://github.com/yourusername)
+[LinkedIn](https://linkedin.com/in/samarpan22) | [Portfolio](https://owsam22.github.io/portfolio) | [GitHub](https://github.com/owsam22)
 
 **Built for MERN Stack Internship Assessment** ⭐
 
@@ -217,4 +217,5 @@ This project is [MIT](LICENSE) licensed.
 <div align="center">
   <sub>made by sam with ☕</sub>
 </div>
+
 
